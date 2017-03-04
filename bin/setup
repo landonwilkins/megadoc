@@ -10,6 +10,8 @@ set -e
   exit 1
 }
 
+#export NODE_PATH="./packages:${NODE_PATH}"
+
 npm install --ignore-scripts
 npm run build # build failures should count!
 
